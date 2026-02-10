@@ -1,12 +1,16 @@
 from vapi import Vapi
 
 client = Vapi(
-    token="YOUR_TOKEN_HERE"
+    base_url="https://api.vapi.ai/",
+    token="dae9c0c2-0477-4cf6-97ac-4f1bb49e7287"
 )
 
-client.phone_numbers.create(
+result = client.phone_numbers.create(
     request={
-        "provider": "byo-phone-number",
-        "credential_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+        "provider": "vapi",
+        "number_desired_area_code": "307",
+        "assistant_id": "9c3d80ff-64a4-4267-9efe-e630a8bc542e"
     }
 )
+
+print(result)
