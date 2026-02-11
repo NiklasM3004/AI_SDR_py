@@ -7,3 +7,13 @@ STATUS QUO: For now I can not do an outbound call since the free numbers from va
 5. Build the Frontend and Database
 
 Ongoing: In ongoing phases we can still add things other numbers via f. e. twilio and outbound calls
+
+
+......
+
+"1. Functions to create assisstant create_assisstant(system_message, first_message, phone_number - return assisstant_id)
+2. Functions to do the calls call_list(dict[customers: names:numbers], assisstent_id - return list[transcripts])
+Test with same number or more numbers bought via twilio or vapi ai
+3. Speicherung von Transcripts save_transcript(transcripts)
+4. extract_meeting_data_from_transcript(transcripts)
+4. Create Meeting (via composio), create_meeting(Meeting_Data)"
