@@ -9,5 +9,4 @@ source .venv/bin/activate
 3. install vapi dependencies
 pip install vapi_server_sdk
 
-
 Visit for further information on the python SDK for vapi ai: (https://github.com/VapiAI/server-sdk-python)
